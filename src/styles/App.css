@@ -17,8 +17,9 @@
   padding: 0;
   text-align: center;
   min-width: 320px;
-  font-family: 'Inter', sans-serif;
-
+  font-family: "Forum", serif;
+  font-size: 18px;
+  font-weight: 200;
 }
 
 html {
@@ -33,9 +34,9 @@ body {
 
 h1 {
   font-family: "Forum", serif;
-  font-weight: 700;
+  font-weight: 200;
   font-style: normal;
-  font-size: xx-large;
+  font-size: 4rem;
 }
 
 /* Header Styles */
@@ -77,7 +78,7 @@ h1 {
 }
 
 .nav-links a:hover {
-  color: var(--accent-color);
+  /* color: var(--primary-color); */
   background-color: #3e3e3e;
 }
 
@@ -114,7 +115,7 @@ button {
 }
 
 .mobile-menu a:hover {
-  color: var(--accent-color);
+  /* color: var(--primary-color); */
   background-color: #3e3e3e;
 }
 
@@ -132,7 +133,7 @@ button {
 
 /* Sections */
 section {
-  padding: 4rem 0rem 2rem;
+  padding: 2rem 0rem 2rem;
   /* push down because of fixed header */
   min-height: 83vh;
 }
@@ -206,6 +207,11 @@ section {
   align-items: center;
 }
 
+#contact>p>a {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -220,12 +226,13 @@ section {
   border-radius: 5px;
   padding: 0.5em;
   font-size: 1.2rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Forum", serif;
+  ;
 }
 
 .contact-form>textarea {
   height: 6em;
-  font-family: 'Inter', sans-serif;
+  font-family: "Forum", serif;
   border-radius: 5px;
   padding: 0.5em;
   font-size: 1.2rem;
@@ -235,7 +242,8 @@ section {
   border-radius: 5px;
   height: 40px;
   font-size: 1.2rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Forum", serif;
+  ;
 }
 
 .contact-form>button :hover {

@@ -12,7 +12,8 @@ export default function HomeSection() {
             <div >
                 <img className="main-logo" src={logo}></img>
                 <h1 >Welcome to QB Beauty</h1>
-                <p >Your beauty, our passion. Explore our services and book your appointment today!</p>
+                <p >Your beauty, our passion.</p>
+                <p>Explore our services and book your appointment today!</p>
             </div>
             <div>
                 <div className="example-images">
