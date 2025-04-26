@@ -16,13 +16,9 @@
   margin: 0 auto;
   padding: 0;
   text-align: center;
-  min-width: 400px;
-}
+  min-width: 320px;
+  font-family: 'Inter', sans-serif;
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
 }
 
 html {
@@ -31,9 +27,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Poppins', 'Arial', sans-serif;
   background-color: var(--background-color);
-  /* soft light pink */
   color: var(--primary-color);
 }
 
@@ -58,7 +52,7 @@ h1 {
 .header-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 0rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -73,17 +67,18 @@ h1 {
 
 .nav-links {
   display: flex;
-  gap: 2rem;
 }
 
 .nav-links a {
   text-decoration: none;
   color: var(--text-color);
   font-weight: 500;
+  padding: 1.2rem;
 }
 
 .nav-links a:hover {
   color: var(--accent-color);
+  background-color: #3e3e3e;
 }
 
 button {
@@ -108,17 +103,19 @@ button {
   flex-direction: column;
   background-color: var(--primary-color);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 1rem 2rem;
+  padding: 0rem 2rem;
 }
 
 .mobile-menu a {
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   text-decoration: none;
   color: var(--text-color);
+  padding: 0.5rem;
 }
 
 .mobile-menu a:hover {
   color: var(--accent-color);
+  background-color: #3e3e3e;
 }
 
 /* Responsive Styles */
@@ -140,15 +137,12 @@ section {
   min-height: 83vh;
 }
 
+/* Home */
+
 .main-logo {
   margin-top: 10px;
   width: 25%;
   min-width: 250px;
-}
-
-#contact {
-  display: flex;
-  justify-content: center;
 }
 
 .impact-image-container {
@@ -163,14 +157,16 @@ section {
   width: 100%;
 }
 
+/* Examples */
+
 .example-images {
-  margin-top: 50px;
+  margin: 50px auto;
   display: flex;
   justify-content: center;
 }
 
 .example-image-container {
-  width: 300px;
+
   aspect-ratio: 1;
   overflow: hidden;
   border-radius: 4px;
@@ -184,4 +180,70 @@ section {
 .example-image {
   object-fit: cover;
   width: 300px;
+}
+
+/* Services */
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin-left: 0;
+  padding-inline-start: 0;
+}
+
+.services-list>li {
+  padding-block: 10px;
+  list-style-type: none;
+  margin: 0;
+}
+
+/* Contact */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  max-width: 500px;
+  width: 50%;
+  min-width: 260px;
+}
+
+.contact-form>input {
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 0.5em;
+  font-size: 1.2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.contact-form>textarea {
+  height: 6em;
+  font-family: 'Inter', sans-serif;
+  border-radius: 5px;
+  padding: 0.5em;
+  font-size: 1.2rem;
+}
+
+.contact-form>button {
+  border-radius: 5px;
+  height: 40px;
+  font-size: 1.2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.contact-form>button :hover {
+  background-color: #3e3e3e;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
