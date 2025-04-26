@@ -6,9 +6,6 @@ function Services() {
       <h1>Our Services</h1>
       <ul>
         <li>Makeup</li>
-        <li>Lashes</li>
-        <li>Nails</li>
-        {/* Add more services here */}
       </ul>
     </section>
   );
