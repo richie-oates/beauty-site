@@ -44,6 +44,7 @@ export default function Header({ title }) {
             {/* Mobile Menu Dropdown */}
             {menuOpen && (
                 <div className="mobile-menu">
+                    <a href="#" onClick={() => setMenuOpen(false)}>Home</a>
                     <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
                     <a href="#services" onClick={() => setMenuOpen(false)}>Services</a>
                     <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>

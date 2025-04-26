@@ -135,18 +135,32 @@ button {
 
 /* Sections */
 section {
-  padding: 6rem 2rem 2rem;
+  padding: 4rem 0rem 2rem;
   /* push down because of fixed header */
   min-height: 83vh;
 }
 
 .main-logo {
-  width: 300px;
+  margin-top: 10px;
+  width: 25%;
+  min-width: 250px;
 }
 
 #contact {
   display: flex;
   justify-content: center;
+}
+
+.impact-image-container {
+  height: 250px;
+  justify-content: center;
+  display: flex;
+  overflow: visible;
+}
+
+.impact-image {
+  object-fit: cover;
+  width: 100%;
 }
 
 .example-images {
