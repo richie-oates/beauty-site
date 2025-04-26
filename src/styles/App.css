@@ -1,0 +1,173 @@
+:root {
+  --primary-color: #111111;
+  /* dark soft black */
+  --accent-color: #D4AF37;
+  /* gold */
+  --background-color: #FAF3E0;
+  /* cream */
+  --text-color: #FFFFFF;
+  /* white */
+  --subtle-text-color: #CCCCCC;
+  /* light grey */
+}
+
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  min-width: 550px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Arial', sans-serif;
+  background-color: var(--background-color);
+  /* soft light pink */
+  color: var(--primary-color);
+}
+
+h1 {
+  font-family: "Forum", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: xx-large;
+}
+
+/* Header Styles */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 8px rgba(215, 213, 213, 0.1);
+  z-index: 100;
+  color: var(--text-color);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--accent-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+}
+
+.mobile-menu a {
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.mobile-menu a:hover {
+  color: var(--accent-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+
+/* Sections */
+section {
+  padding: 6rem 2rem 2rem;
+  /* push down because of fixed header */
+  min-height: 83vh;
+}
+
+.main-logo {
+  width: 300px;
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+}
+
+.example-images {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.example-image-container {
+  width: 300px;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 4px;
+
+  border-color: var(--primary-color);
+  box-shadow: 0 2px 8px rgba(215, 213, 213, 0.1);
+  display: flex;
+}
+
+.example-image {
+  object-fit: cover;
+  width: 300px;
+}
