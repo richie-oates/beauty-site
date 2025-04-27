@@ -6,6 +6,7 @@ import ServicesSection from "./components/ServicesSection";
 import ContactSection from "./components/ContactSection";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import SectionDivider from './components/SectionDivider';
 
 function App() {
   return (
@@ -13,8 +14,11 @@ function App() {
       <Header title="Queen Bee Beauty Official" />
       <main>
         <HomeSection />
+        <SectionDivider />
         <AboutSection />
+        <SectionDivider />
         <ServicesSection />
+        <SectionDivider />
         <ContactSection />
       </main>
       <Footer />

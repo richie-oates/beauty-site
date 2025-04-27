@@ -40,6 +40,10 @@ h1 {
   font-size: clamp(2.5rem, 6vw, 4rem);
 }
 
+hr {
+  border-top: 1px solid black;
+}
+
 /* Header Styles */
 .header {
   position: fixed;
@@ -136,13 +140,17 @@ button {
 section {
   padding: 2rem 0rem 2rem;
   /* push down because of fixed header */
-  min-height: 83vh;
+  min-height: 90vh;
+}
+
+.section-body {
+  padding: 0 2rem;
 }
 
 /* Home */
 
 .main-logo {
-  margin-top: 10px;
+  margin-top: 30px;
   width: 50vw;
   max-width: 250px;
 }
@@ -171,7 +179,7 @@ section {
 
   aspect-ratio: 1;
   overflow: hidden;
-  border-radius: 4px;
+
   padding: 10px;
 
   border-color: var(--primary-color);
@@ -180,6 +188,7 @@ section {
 }
 
 .example-image {
+  border-radius: 16px;
   object-fit: cover;
   width: 300px;
 }
