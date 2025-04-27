@@ -15,10 +15,10 @@ export default function ContactSection() {
                 <textarea placeholder="Your Message"></textarea>
                 <button type="submit">Send Message</button>
             </form>
-            <p>Find us on socials!</p>
+            <p>Find me on facebook and insta!</p>
             <div className='socials'>
-                <SocialIcon url='https://www.instagram.com/qb.beauty.official/' />
                 <SocialIcon url='https://www.facebook.com/jessica.broxholme.50' />
+                <SocialIcon url='https://www.instagram.com/qb.beauty.official/' />
             </div>
 
         </section>

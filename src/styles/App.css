@@ -34,6 +34,10 @@ body {
   background: linear-gradient(135deg, var(--background-color)0%, #f5f5f5 50%, var(--background-color)100%);
 }
 
+b {
+  font-weight: 700;
+}
+
 h1 {
   font-family: "Forum", serif;
   font-weight: 200;
@@ -205,6 +209,20 @@ section {
   width: 100%;
 }
 
+.video-container {
+  clip-path: circle(30% at 50% 40%);
+  width: 80vw;
+  max-width: 600px;
+
+  overflow: hidden;
+}
+
+.demo-video {
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
 /* Examples */
 
 .example-images {
@@ -281,7 +299,7 @@ section {
   justify-content: center;
 }
 
-#contact>p>a {
+a {
   color: var(--primary-color);
   font-weight: bold;
 }
