@@ -1,3 +1,5 @@
+import jess from '../assets/jess.jpg'
+
 export default function AboutSection() {
     return (
         <section id="about" >
@@ -8,6 +10,9 @@ export default function AboutSection() {
                 <p >Prices are £15-£20 (cash only).</p>
                 <p >Appointments available on Saturdays.</p>
                 <p >Please leave me a dm or message me to book and discuss your needs.</p>
+                <div class="profile-image-container">
+                    <img src={jess} class="profile-image" />
+                </div>
             </div>
         </section>
     );

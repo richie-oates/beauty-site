@@ -41,6 +41,8 @@ h1 {
 }
 
 hr {
+  padding: 0;
+  margin: 0;
   border-top: 1px solid black;
 }
 
@@ -138,7 +140,7 @@ button {
 
 /* Sections */
 section {
-  padding: 2rem 0rem 2rem;
+  padding: 1rem 0rem 2rem;
   /* push down because of fixed header */
   min-height: 90vh;
 }
@@ -191,6 +193,19 @@ section {
   border-radius: 16px;
   object-fit: cover;
   width: 300px;
+}
+
+/* About */
+
+.profile-image-container {
+  height: 70vmin;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.profile-image {
+  height: 100vmin;
+  object-fit: cover;
 }
 
 /* Services */
