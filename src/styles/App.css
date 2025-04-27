@@ -9,6 +9,7 @@
   /* white */
   --subtle-text-color: #CCCCCC;
   /* light grey */
+  font-size: 16px;
 }
 
 #root {
@@ -18,7 +19,7 @@
   text-align: center;
   min-width: 320px;
   font-family: "Forum", serif;
-  font-size: 18px;
+  font-size: clamp(1rem, 2vw, 1.5rem);
   font-weight: 200;
 }
 
@@ -36,7 +37,7 @@ h1 {
   font-family: "Forum", serif;
   font-weight: 200;
   font-style: normal;
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 6vw, 4rem);
 }
 
 /* Header Styles */
@@ -142,12 +143,12 @@ section {
 
 .main-logo {
   margin-top: 10px;
-  width: 25%;
-  min-width: 250px;
+  width: 50vw;
+  max-width: 250px;
 }
 
 .impact-image-container {
-  height: 250px;
+  height: 25vh;
   justify-content: center;
   display: flex;
   overflow: visible;
