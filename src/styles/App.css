@@ -1,7 +1,7 @@
 :root {
   --primary-color: black;
   /* dark soft black */
-  --accent-color: #D4AF37;
+  --accent-color: #b5b0a1;
   /* gold */
   --background-color: #EDE0D4;
   /* cream */
@@ -19,7 +19,7 @@
   text-align: center;
   min-width: 320px;
   font-family: 'Poppins', sans-serif;
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
   font-weight: 200;
 }
 
@@ -94,7 +94,7 @@ button {
   background-color: var(--primary-color);
   color: var(--text-color);
   border-radius: 12px;
-  padding: 0.75em 2em;
+
   transition: all 0.3s ease;
   border: none;
   font-size: 1rem;
@@ -107,10 +107,6 @@ button {
 button:hover {
   background-color: var(--accent-color);
   color: var(--primary-color);
-  transform: scale(1.05);
-  border-color: var(--primary-color);
-  border-style: solid;
-  border-width: 1px;
 }
 
 .hamburger {
@@ -156,6 +152,17 @@ button:hover {
 
   .hamburger {
     display: block;
+  }
+}
+
+button,
+.hamburger {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (hover: hover) {
+  .hamburger:hover {
+    background-color: var(--accent-color);
   }
 }
 
@@ -224,6 +231,7 @@ section {
   border-radius: 16px;
   object-fit: cover;
   width: 300px;
+  aspect-ratio: 1;
 }
 
 /* About */
@@ -307,6 +315,7 @@ section {
 }
 
 .contact-form>button {
+  padding: 0.75em 2em;
   width: 250px;
   height: 45px;
   font-size: 1.2rem;
@@ -315,6 +324,10 @@ section {
 
 .contact-form>button:hover {
   font-weight: 600;
+  transform: scale(1.05);
+  border-color: var(--primary-color);
+  border-style: solid;
+  border-width: 1px;
 }
 
 .socials {
