@@ -13,14 +13,14 @@ function select_image() {
 export default function HomeSection() {
     return (
         <section id="home" >
-            <div className="impact-image-container">
+            <div data-aos="fade-down" className="impact-image-container">
                 <img className="impact-image" src={select_image()} />
             </div>
-            <div class="section-body">
-                <h1 >Welcome to QB Beauty</h1>
-                <p >Your beauty, our passion.</p>
-                <p>Explore our services and book your appointment today!</p>
-                <img className="main-logo" src={logo}></img>
+            <div className="section-body">
+                <h1 data-aos="fade-right" >Welcome to QB Beauty</h1>
+                <p data-aos="fade-left" >Your beauty, our passion.</p>
+                <p data-aos="fade-right">Explore our services and book your appointment today!</p>
+                <img data-aos="fade-up" className="main-logo" src={logo}></img>
             </div>
         </section>
     );
