@@ -20,6 +20,7 @@ export default function Header({ title }) {
                     <a href="#">Home</a>
                     <a href="#about">About</a>
                     <a href="#services">Services</a>
+                    <a href="#availability">Availability</a>
                     <a href="#contact">Contact</a>
                 </nav>
 
@@ -47,6 +48,7 @@ export default function Header({ title }) {
                     <a href="#" onClick={() => setMenuOpen(false)}>Home</a>
                     <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
                     <a href="#services" onClick={() => setMenuOpen(false)}>Services</a>
+                    <a href="#availability" onClick={() => setMenuOpen(false)}>Availability</a>
                     <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
                 </div>
             )}

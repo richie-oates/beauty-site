@@ -13,6 +13,7 @@ import ContactSection from "./components/ContactSection";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import SectionDivider from './components/SectionDivider';
+import AvailabilitySection from './components/Availability';
 
 function App() {
   useEffect(() => {
@@ -31,6 +32,8 @@ function App() {
         <AboutSection />
         <SectionDivider />
         <ServicesSection />
+        <SectionDivider />
+        <AvailabilitySection />
         <SectionDivider />
         <ContactSection />
       </main>

@@ -5,34 +5,36 @@ import example_3 from '../assets/qb_example_02.jpg'
 export default function ServicesSection() {
     return (
         <section id="services" >
-            <div >
-                <h1 data-aos="fade-right" >Makeup Services</h1>
-                <ul className="services-list">
-                    <li data-aos="fade-right" >Soft Glam</li>
-                    <li data-aos="fade-right" >Full Glam</li>
-                    <li data-aos="fade-right" >Dewy look</li>
-                    <li data-aos="fade-right" >Nude look</li>
-                    {/* Add more services here */}
-                </ul>
-            </div>
-            <div>
-                <div data-aos="fade-right" className="example-images">
-                    <div className='example-image-container'>
-                        <img id="soft-glam" className="example-image" src={example_1} />
-                        <div className="example-image-label">
-                            <p>Soft Glam</p>
+            <div className="section-body">
+                <div >
+                    <h1 data-aos="fade-right" >Makeup Services</h1>
+                    <ul className="services-list">
+                        <li data-aos="fade-right" >Soft Glam</li>
+                        <li data-aos="fade-right" >Full Glam</li>
+                        <li data-aos="fade-right" >Dewy look</li>
+                        <li data-aos="fade-right" >Nude look</li>
+                        {/* Add more services here */}
+                    </ul>
+                </div>
+                <div>
+                    <div data-aos="fade-right" className="example-images">
+                        <div className='example-image-container'>
+                            <img id="soft-glam" className="example-image" src={example_1} />
+                            <div className="example-image-label">
+                                <p>Soft Glam</p>
+                            </div>
                         </div>
-                    </div>
-                    <div data-aos="fade-right" className='example-image-container'>
-                        <img className="example-image" src={example_2} />
-                        <div className="example-image-label">
-                            <p>Full Glam</p>
+                        <div data-aos="fade-right" className='example-image-container'>
+                            <img className="example-image" src={example_2} />
+                            <div className="example-image-label">
+                                <p>Full Glam</p>
+                            </div>
                         </div>
-                    </div>
-                    <div data-aos="fade-right" className='example-image-container'>
-                        <img className="example-image" src={example_3} />
-                        <div className="example-image-label">
-                            <p>Nude Look</p>
+                        <div data-aos="fade-right" className='example-image-container'>
+                            <img className="example-image" src={example_3} />
+                            <div className="example-image-label">
+                                <p>Nude Look</p>
+                            </div>
                         </div>
                     </div>
                 </div>
