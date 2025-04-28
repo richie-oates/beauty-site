@@ -1,3 +1,5 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
 import image from '../assets/availability.jpg'
 
 export default function AvailabilitySection() {
