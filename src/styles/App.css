@@ -201,15 +201,66 @@ section {
 
 .impact-image-container {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  position: relative;
   height: 25vh;
-  justify-content: center;
-  display: flex;
-  overflow: visible;
+  overflow: hidden;
 }
 
+@keyframes wandering {
+  0% {
+    transform: translate(-50%, 5%);
+  }
+
+  12% {
+    transform: translate(-55%, 0%);
+  }
+
+  24% {
+    transform: translate(-50%, 5%);
+  }
+
+  36% {
+    transform: translate(-45%, 0%);
+  }
+
+  50% {
+    transform: translate(-50%, 5%);
+  }
+
+  62% {
+    transform: translate(-45%, 10%);
+  }
+
+  75% {
+    transform: translate(-50%, 5%);
+  }
+
+  88% {
+    transform: translate(-55%, 10%);
+  }
+
+  100% {
+    transform: translate(-50%, 5%);
+  }
+}
+
+
 .impact-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  /* Centers the image */
+  min-width: 125%;
+  /* Make the image wider than the container */
+  height: 100%;
   object-fit: cover;
-  width: 100%;
+  /* So it fills nicely */
+  animation-name: wandering;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
 }
 
 .video-container {
@@ -378,7 +429,7 @@ a {
     transform: scale(1.2);
   }
 
-  0% {
+  100% {
     transform: scale(1.0);
   }
 }
