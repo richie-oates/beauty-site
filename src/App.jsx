@@ -25,7 +25,7 @@ function App() {
 
   return (
     <Router>
-      <Header title="Queen Bee Beauty Official" />
+      <Header />
       <main>
         <HomeSection />
         <SectionDivider />

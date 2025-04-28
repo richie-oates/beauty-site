@@ -17,8 +17,8 @@ export default function ServicesSection() {
                     </ul>
                 </div>
                 <div>
-                    <div data-aos="fade-right" className="example-images">
-                        <div className='example-image-container'>
+                    <div className="example-images">
+                        <div data-aos="fade-right" className='example-image-container'>
                             <img id="soft-glam" className="example-image" src={example_1} />
                             <div className="example-image-label">
                                 <p>Soft Glam</p>

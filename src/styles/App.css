@@ -25,6 +25,7 @@
 
 html {
   scroll-behavior: smooth;
+  /* scroll-padding-top: 80px; */
 }
 
 body {
@@ -43,6 +44,8 @@ h1 {
   font-weight: 400;
   font-style: normal;
   font-size: clamp(4rem, 10vw, 10rem);
+  margin-block-start: 0.2em;
+  margin-block-end: 0.2em;
 }
 
 hr {
@@ -53,7 +56,10 @@ hr {
 
 /* Header Styles */
 .header {
+  position: fixed;
   width: 100%;
+  top: 0;
+  z-index: 100;
   background-color: var(--primary-color);
   box-shadow: 0 2px 8px rgba(215, 213, 213, 0.1);
   color: var(--text-color);
@@ -240,6 +246,10 @@ section {
   box-shadow: 0 2px 8px rgba(215, 213, 213, 0.1);
   display: flex;
   flex-direction: column;
+}
+
+.example-image-container:hover {
+  transform: scale(1.2);
 }
 
 .example-image {
