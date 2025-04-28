@@ -18,8 +18,8 @@ export default function ContactSection() {
                 </form>
                 <p>Find me on facebook and insta!</p>
                 <div className='socials'>
-                    <SocialIcon url='https://www.facebook.com/jessica.broxholme.50' />
-                    <SocialIcon url='https://www.instagram.com/qb.beauty.official/' />
+                    <SocialIcon className='social-icon' url='https://www.facebook.com/jessica.broxholme.50' />
+                    <SocialIcon className='social-icon' url='https://www.instagram.com/qb.beauty.official/' />
                 </div>
             </div>
         </section>
