@@ -23,7 +23,7 @@ export default function HomeSection() {
                 <p data-aos="fade-right" data-aos-delay="800" >Your <b>beauty</b>, our <b>passion</b>.</p>
                 <p data-aos="fade-right" data-aos-delay="1600">Explore our <a href='#services'>services</a> and <a href='#contact'>book</a> your appointment today!</p>
                 <img data-aos="fade-up" data-aos-delay="2400" className="main-logo" src={logo}></img>
-                <div data-aos="zoom-in-up" data-aos-delay="2400" className='video-container'>
+                <div data-aos="zoom-in-up" className='video-container'>
                     <video className='demo-video'
                         autoPlay
                         muted
