@@ -7,7 +7,7 @@ export default function ServicesSection() {
         <section id="services" >
             <div className="section-body">
                 <div >
-                    <h1 data-aos="fade-right" >Makeup Services</h1>
+                    <a href='#services'><h1 data-aos="fade-right" >Makeup Services</h1></a>
                     <ul className="services-list">
                         <li data-aos="fade-right" >Soft Glam</li>
                         <li data-aos="fade-right" >Full Glam</li>

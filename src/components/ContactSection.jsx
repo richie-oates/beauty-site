@@ -6,7 +6,7 @@ export default function ContactSection() {
     return (
         <section id="contact" >
             <div className="section-body">
-                <h1 data-aos="fade-right" data-aos-anchor-placement="bottom-bottom" >Contact</h1>
+                <a href="#contact"><h1 data-aos="fade-right" data-aos-anchor-placement="bottom-bottom" >Contact</h1></a>
                 <p >Get in touch for bookings or inquiries.</p>
                 <p>Email: <a href="mailto:qb.beauty.official@gmail.com">qb.beauty.official@gmail.com</a></p>
                 <p>or use this form:</p>

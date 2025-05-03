@@ -6,7 +6,7 @@ export default function AvailabilitySection() {
     return (
         <section id="availability" >
             <div className="section-body">
-                <h1 data-aos="fade-right" data-aos-anchor-placement="bottom-bottom" >Availability</h1>
+                <a href='#availability' ><h1 data-aos="fade-right" data-aos-anchor-placement="bottom-bottom" >Availability</h1></a>
                 <img data-aos="fade-right" className='fullImage' src={image} />
             </div>
         </section >
