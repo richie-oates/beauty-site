@@ -1,19 +1,12 @@
 import './styles/App.css'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect } from 'react';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import { useEffect } from 'react';
-
-import HomeSection from "./components/HomeSection";
-import AboutSection from "./components/AboutSection";
-import ServicesSection from "./components/ServicesSection";
-import ContactSection from "./components/ContactSection";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import SectionDivider from './components/SectionDivider';
-import AvailabilitySection from './components/Availability';
+import { Public } from './Public.jsx'
+import AdminPanel from './admin-components/AdminPanel.jsx'
 
 function App() {
   useEffect(() => {
@@ -25,19 +18,10 @@ function App() {
 
   return (
     <Router>
-      <Header />
-      <main>
-        <HomeSection />
-        <SectionDivider />
-        <AboutSection />
-        <SectionDivider />
-        <ServicesSection />
-        <SectionDivider />
-        <AvailabilitySection />
-        <SectionDivider />
-        <ContactSection />
-      </main>
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Public />} />
+        <Route path="/admin" element={<AdminPanel />} />
+      </Routes>
     </Router>
   );
 }

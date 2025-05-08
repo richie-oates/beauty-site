@@ -3,7 +3,7 @@ import logo from '../assets/qb_logo.jpg'
 import makeup_s from '../assets/makeup_02_small.jpg'
 import makeup_m from '../assets/makeup_02_med.jpg'
 import makeup_l from '../assets/makeup_02_large.jpg'
-import demo_vid from '../assets/demo_vid_boomerang.mp4'
+import demo_vid from '../assets/demo_vid_boomerang_cropped.mp4'
 
 import { useMediaQuery } from 'react-responsive';
 

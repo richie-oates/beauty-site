@@ -6,7 +6,12 @@ export default function ContactSection() {
     return (
         <section id="contact" >
             <div className="section-body">
-                <a href="#contact"><h1 data-aos="fade-right" data-aos-anchor-placement="bottom-bottom" >Contact</h1></a>
+                <a href="#contact"><h1 >Contact</h1></a>
+                <p>Find me on facebook and insta!</p>
+                <div className='socials'>
+                    <SocialIcon className='social-icon' url='https://www.facebook.com/jessica.broxholme.50' />
+                    <SocialIcon className='social-icon' url='https://www.instagram.com/qb.beauty.official/' />
+                </div>
                 <p >Get in touch for bookings or inquiries.</p>
                 <p>Email: <a href="mailto:qb.beauty.official@gmail.com">qb.beauty.official@gmail.com</a></p>
                 <p>or use this form:</p>
@@ -16,11 +21,7 @@ export default function ContactSection() {
                     <textarea placeholder="Your Message"></textarea>
                     <button type="submit">Send Message</button>
                 </form>
-                <p>Find me on facebook and insta!</p>
-                <div className='socials'>
-                    <SocialIcon className='social-icon' url='https://www.facebook.com/jessica.broxholme.50' />
-                    <SocialIcon className='social-icon' url='https://www.instagram.com/qb.beauty.official/' />
-                </div>
+
             </div>
         </section>
     );

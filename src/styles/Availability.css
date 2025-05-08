@@ -1,0 +1,50 @@
+.booking-calendar {
+    padding: 1rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar-grid {
+    margin-top: 1rem;
+}
+
+.calendar-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.calendar-date {
+    width: 80px;
+    font-weight: bold;
+}
+
+.calendar-times {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.time-button {
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #ccc;
+    background: white;
+    cursor: pointer;
+    color: black;
+}
+
+.time-button.selected {
+    background: var(--accent-color);
+    color: black;
+}
+
+.time-button:disabled {
+    background: #eee;
+    cursor: not-allowed;
+}
