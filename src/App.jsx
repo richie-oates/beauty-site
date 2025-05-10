@@ -17,7 +17,7 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <Router basename="/beauty-site">
       <Routes>
         <Route path="/" element={<Public />} />
         <Route path="/admin" element={<AdminPanel />} />
