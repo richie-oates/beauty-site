@@ -1,5 +1,5 @@
 import './styles/App.css'
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect } from 'react';
 
 import AOS from 'aos';
@@ -7,8 +7,6 @@ import 'aos/dist/aos.css';
 
 import { Public } from './Public.jsx'
 import AdminPanel from './admin-components/AdminPanel.jsx'
-
-const isLocal = window.location.hostname === "localhost";
 
 function App() {
   useEffect(() => {
@@ -19,7 +17,7 @@ function App() {
   }, []);
 
   return (
-    <Router basename={isLocal ? "/" : "/beauty-site"}>
+    <Router basename="/beauty-site">
       <Routes>
         <Route path="/" element={<Public />} />
         <Route path="/admin" element={<AdminPanel />} />
