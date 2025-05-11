@@ -43,7 +43,7 @@ h1 {
   font-family: "Caramel", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: clamp(4rem, 10vw, 10rem);
+  font-size: clamp(4rem, 10vw, 6rem);
   margin-block-start: 0.2em;
   margin-block-end: 0.2em;
 }
@@ -266,6 +266,35 @@ section {
   animation-play-state: running;
   animation-timing-function: ease-in-out;
 }
+
+.responsive-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.text-column,
+.media-column {
+  width: 100%;
+}
+
+/* Responsive layout for larger screens */
+@media (min-width: 768px) {
+  .responsive-content {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .text-column,
+  .media-column {
+    width: 48%;
+  }
+}
+
 
 .video-container {
   aspect-ratio: 1;

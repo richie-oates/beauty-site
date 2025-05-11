@@ -19,20 +19,26 @@ export default function HomeSection() {
                 <img className="impact-image" src={select_image()} />
             </div>
             <div className="section-body">
-                <h1 data-aos="fade-right" >Welcome to QB Beauty</h1>
-                <p data-aos="fade-right" data-aos-delay="800" >Your <b>beauty</b>, our <b>passion</b>.</p>
-                <p data-aos="fade-right" data-aos-delay="1600">Explore our <a href='#services'>services</a> and <a href='#contact'>book</a> your appointment today!</p>
-                {/* <img data-aos="fade-up" data-aos-delay="2400" className="main-logo" src={logo}></img> */}
-                <div data-aos="zoom-in-up" data-aos-delay="1800" className='video-container'>
-                    <video className='demo-video'
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                    >
-                        <source src={demo_vid} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+                <div className="responsive-content">
+                    <div className="text-column">
+                        <h1 data-aos="fade-right" >Welcome to QB Beauty</h1>
+                        <p data-aos="fade-right" data-aos-delay="600" >Your <b>beauty</b>, our <b>passion</b>.</p>
+                        <p data-aos="fade-right" data-aos-delay="800">Explore our <a href='#services'>services</a> and <a href='#contact'>book</a> your appointment today!</p>
+                    </div>
+                    {/* <img data-aos="fade-up" data-aos-delay="2400" className="main-logo" src={logo}></img> */}
+                    <div className="media-column">
+                        <div data-aos="zoom-in-up" data-aos-delay="1000" className='video-container'>
+                            <video className='demo-video'
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
+                            >
+                                <source src={demo_vid} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
                 </div>
             </div>
 
