@@ -75,7 +75,7 @@ export default function AvailabilitySection() {
         <section id="availability" >
             <div className="section-body">
                 <a href='#availability' ><h1 data-aos="fade-right" data-aos-anchor-placement="bottom-bottom" >Availability</h1></a>
-                <div className="booking-calendar">
+                <div className="booking-calendar box-shadow">
                     <div className="calendar-header">
                         <button onClick={handlePrevMonth} disabled={currentMonth <= DateTime.local().setZone("Europe/London").startOf("month")}>&lt;</button>
                         <h2>{currentMonth.toFormat("LLLL yyyy")}</h2>
