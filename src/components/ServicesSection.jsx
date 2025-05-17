@@ -6,15 +6,25 @@ export default function ServicesSection() {
     return (
         <section id="services" >
             <div className="section-body">
-                <div >
-                    <a href='#services'><h1 data-aos="fade-right" >Makeup Services</h1></a>
-                    <ul className="services-list">
-                        <li data-aos="fade-right" >Soft Glam</li>
-                        <li data-aos="fade-right" >Full Glam</li>
-                        <li data-aos="fade-right" >Dewy look</li>
-                        <li data-aos="fade-right" >Nude look</li>
-                        {/* Add more services here */}
-                    </ul>
+                <a href='#services'><h1 data-aos="fade-right" >Services</h1></a>
+                <div className='responsive-content' styles="width:90%">
+                    <div className="text-column box-shadow" data-aos="fade-right">
+                        <h2>Makeup</h2>
+                        <ul className="services-list">
+                            <li>Soft Glam</li>
+                            <li>Full Glam</li>
+                            <li>Dewy look</li>
+                            <li>Nude look</li>
+                        </ul>
+                    </div>
+                    <div className="text-column box-shadow" data-aos="fade-right">
+                        <h2>Lashes</h2>
+                        <ul className="services-list">
+                            <li>Classic lashes</li>
+                            <li>Classic lash infills</li>
+                            <li>Classic lash removal</li>
+                        </ul>
+                    </div>
                 </div>
                 <div>
                     <div className="example-images">
