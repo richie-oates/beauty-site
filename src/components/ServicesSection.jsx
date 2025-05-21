@@ -1,6 +1,7 @@
 import example_1 from '../assets/qb_example_01.jpg'
 import example_2 from '../assets/qb_example_03.jpg'
 import example_3 from '../assets/qb_example_02.jpg'
+import example_4 from '../assets/qb_example_04_nude.jpg'
 
 export default function ServicesSection() {
     return (
@@ -42,6 +43,12 @@ export default function ServicesSection() {
                         </div>
                         <div data-aos="fade-right" className='example-image-container'>
                             <img className="example-image" src={example_3} />
+                            <div className="example-image-label">
+                                <p>Nude Look</p>
+                            </div>
+                        </div>
+                        <div data-aos="fade-right" className='example-image-container'>
+                            <img className="example-image" src={example_4} />
                             <div className="example-image-label">
                                 <p>Nude Look</p>
                             </div>
