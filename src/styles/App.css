@@ -191,7 +191,7 @@ button,
 section {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   /* background: linear-gradient(135deg, var(--background-color)0%, #f5f5f5 50%, var(--background-color)100%); */
-  padding: 0rem 0rem 2rem;
+  padding: 0rem 0rem;
   /* push down because of fixed header */
   min-height: 90vh;
 }
