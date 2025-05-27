@@ -12,7 +12,7 @@ export default function ContactSection() {
                     <SocialIcon className='social-icon' url='https://www.facebook.com/jessica.broxholme.50' />
                     <SocialIcon className='social-icon' url='https://www.instagram.com/qb.beauty.official/' />
                 </div>
-                <p >Get in touch for bookings or inquiries.</p>
+                <p >Get in touch for bookings or enquiries.</p>
                 <p>Email: <a href="mailto:qb.beauty.official@gmail.com">qb.beauty.official@gmail.com</a></p>
                 <p>or use this form:</p>
                 <form className='contact-form' >
