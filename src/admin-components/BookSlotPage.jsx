@@ -55,6 +55,7 @@ export default function BookSlotPage() {
         <div style={{ padding: "2rem" }}>
             <h1>Booking Confirmation</h1>
             <p>{message}</p>
+            <a href='/admin' >Go to to admin panel</a>
         </div>
     );
 }
