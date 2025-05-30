@@ -156,7 +156,7 @@ export default function AvailabilitySection() {
                                 <input
                                     type="hidden"
                                     name="bookingLink"
-                                    value={`https://qbbeauty.netlify.app/book-slot?slotId=${selectedSlotId}&clientName=${encodeURIComponent(formData.name)}`}
+                                    value={`https://qbbeauty.netlify.app/book-slot?id=${selectedSlotId}&client=${encodeURIComponent(formData.name)}`}
                                 />
 
                                 <p hidden>
