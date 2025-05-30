@@ -71,6 +71,14 @@ export default function AvailabilitySection() {
         setSelectedSlotId(slotId === selectedSlotId ? null : slotId);
     }
 
+    const [showBookingForm, setShowBookingForm] = useState(false);
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+    });
+
     return (
         <section id="availability" >
             <div className="section-body">
@@ -108,6 +116,115 @@ export default function AvailabilitySection() {
                         )}
                     </div>
                 </div>
+                {selectedSlotId && (
+                    <div style={{ marginTop: "1rem" }}>
+                        <button
+                            className="request-button"
+                            onClick={() => setShowBookingForm(true)}
+                        >
+                            Request Appointment
+                        </button>
+                    </div>
+                )}
+                {showBookingForm && (
+                    <div className="booking-form-overlay">
+                        <div className="booking-form">
+                            <h2>Request Appointment</h2>
+                            <p>
+                                You are requesting to book:
+                                <strong>
+                                    {" "}
+                                    {DateTime.fromISO(
+                                        allSlots.find(s => s.id === selectedSlotId).start_time
+                                    )
+                                        .setZone("Europe/London")
+                                        .toFormat("cccc dd LLLL yyyy 'at' HH:mm")}
+                                </strong>
+                            </p>
+                            <form
+                                name="appointment-request"
+                                method="POST"
+                                data-netlify="true"
+                                netlify-honeypot="bot-field"
+                            >
+                                <input type="hidden" name="form-name" value="appointment-request" />
+                                <input type="hidden" name="slot-time" value={DateTime.fromISO(
+                                    allSlots.find(s => s.id === selectedSlotId).start_time
+                                )
+                                    .setZone("Europe/London")
+                                    .toFormat("cccc dd LLLL yyyy 'at' HH:mm")} />
+                                <input
+                                    type="hidden"
+                                    name="bookingLink"
+                                    value={`https://qbbeauty.netlify.app/book-slot?slotId=${selectedSlotId}&clientName=${encodeURIComponent(formData.name)}`}
+                                />
+
+                                <p hidden>
+                                    <label>
+                                        Don’t fill this out if you’re human:{" "}
+                                        <input name="bot-field" />
+                                    </label>
+                                </p>
+
+                                <label>
+                                    Name:
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        value={formData.name}
+                                        onChange={e =>
+                                            setFormData({ ...formData, name: e.target.value })
+                                        }
+                                        required
+                                    />
+                                </label>
+                                <label>
+                                    Email:
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        value={formData.email}
+                                        onChange={e =>
+                                            setFormData({ ...formData, email: e.target.value })
+                                        }
+                                        required
+                                    />
+                                </label>
+                                <label>
+                                    Phone:
+                                    <input
+                                        type="tel"
+                                        name="phone"
+                                        value={formData.phone}
+                                        onChange={e =>
+                                            setFormData({ ...formData, phone: e.target.value })
+                                        }
+                                    />
+                                </label>
+                                <label>
+                                    Message:
+                                    <textarea
+                                        name="message"
+                                        value={formData.message}
+                                        onChange={e =>
+                                            setFormData({ ...formData, message: e.target.value })
+                                        }
+                                    />
+                                </label>
+
+                                <div className="form-actions">
+                                    <button type="submit">Send Request</button>
+                                    <button
+                                        type="button"
+                                        onClick={() => setShowBookingForm(false)}
+                                    >
+                                        Cancel
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                )}
                 {/* <img data-aos="fade-right" className='fullImage' src={image} /> */}
             </div>
         </section >

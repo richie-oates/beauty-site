@@ -18,11 +18,22 @@
 
 <body>
   <!-- A little help for the Netlify post-processing bots -->
+  <!-- This for the contact form -->
   <form name="contact" netlify netlify-honeypot="bot-field" hidden>
     <input type="text" name="name" />
     <input type="email" name="email" />
     <textarea name="message"></textarea>
   </form>
+  <!-- This for the booking form -->
+  <!-- <form name="appointment-request" netlify netlify-honeypot="bot-field" hidden>
+    <input type="hidden" name="slot-date" />
+    <input type="hidden" name="slot-time" />
+    <input type="hidden" name="bookingLink" />
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <input type="tel" name="phone" />
+    <textarea name="message"></textarea>
+  </form> -->
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

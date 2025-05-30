@@ -7,6 +7,7 @@ import 'aos/dist/aos.css';
 
 import { Public } from './Public.jsx'
 import AdminPanel from './admin-components/AdminPanel.jsx'
+import BookSlotPage from './admin-components/BookSlotPage.jsx'
 
 function App() {
   useEffect(() => {
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Public />} />
         <Route path="/admin" element={<AdminPanel />} />
+        <Route path="/admin/book-slot" element={<BookSlotPage />} />
       </Routes>
     </Router>
   );
