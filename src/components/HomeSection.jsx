@@ -23,7 +23,7 @@ export default function HomeSection() {
                     <div className="text-column">
                         <h1 data-aos="fade-right" >Welcome to QB Beauty</h1>
                         <p data-aos="fade-right" data-aos-delay="600" >Your <b>beauty</b>, our <b>passion</b>.</p>
-                        <p data-aos="fade-right" data-aos-delay="800">Explore our <a href='#services'>services</a> and <a href='#contact'>book</a> your appointment today!</p>
+                        <p data-aos="fade-right" data-aos-delay="800">Explore our <a href='#services'>services</a> and <a href='#availability'>book</a> your appointment today!</p>
                     </div>
                     {/* <img data-aos="fade-up" data-aos-delay="2400" className="main-logo" src={logo}></img> */}
                     <div className="media-column">

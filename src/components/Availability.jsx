@@ -116,6 +116,9 @@ export default function AvailabilitySection() {
                         )}
                     </div>
                 </div>
+                <div>
+                    <p>If you don't see the date or time you're looking for, please <a href="#contact">contact</a> me as I might still be able to fit you in.</p>
+                </div>
                 {selectedSlotId && (
                     <div style={{ marginTop: "1rem" }}>
                         <button
