@@ -373,6 +373,14 @@ section {
   object-fit: contain;
 }
 
+.jess2-image-container {
+  width: 100%;
+}
+
+.jess2-image {
+  width: 100%;
+}
+
 /* Services */
 
 .box-shadow {
