@@ -21,7 +21,6 @@ export default function AvailabilityForm({ onNewSlot }) {
             end_time: endUTC,
             service,
             booked: false,
-            reserved: false,
         });
 
         if (!error) {

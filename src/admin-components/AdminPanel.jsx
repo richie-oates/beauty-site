@@ -5,6 +5,7 @@ import { supabase } from "../supabaseClient";
 import Login from "./Login";
 
 import '../styles/Admin.css'
+import AdminServices from "./AdminServices";
 
 const ADMIN_EMAILS = ["richoates2020@gmail.com", "qb.beauty.official@gmail.com"];
 
@@ -58,18 +59,22 @@ export default function AdminPanel() {
     return (
         <div className="admin-panel">
             <header className="admin-header">
-                <div className="admin-user-info">
-                    Logged in as: <strong>{session.user.email}</strong>
-                </div>
                 <button onClick={handleLogout}>Log Out</button>
+                <button onClick={() => location.href = '/'}>Go to Main Site</button>
+
+
             </header>
 
-            <h1>Manage Availability</h1>
+            <h1>QBBeauty Site Admin</h1>
+            <div className="admin-user-info">
+                Logged in as: <strong>{session.user.email}</strong>
+            </div>
             <AvailabilityForm onNewSlot={fetchAvailability} />
             <AvailabilityList
                 availability={availability}
                 onChange={fetchAvailability}
             />
+            <AdminServices />
         </div>
     );
 }

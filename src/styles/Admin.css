@@ -69,3 +69,28 @@ button[disabled] {
     opacity: 0.5;
     cursor: not-allowed;
 }
+
+.admin-services {
+    margin: 2rem 0;
+}
+
+/* .add-service-form, */
+.service-item {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.service-item span {
+    flex: 1;
+}
+
+.service-group {
+    margin-top: 1rem;
+    border-top: 1px solid #ccc;
+    padding-top: 0.5rem;
+}
+
+.service-group h3 {
+    margin-bottom: 0.3rem;
+}

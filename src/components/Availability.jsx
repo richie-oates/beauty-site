@@ -19,6 +19,7 @@ export default function AvailabilitySection() {
             const { data, error } = await supabase
                 .from("availability")
                 .select("*")
+                .eq("booked", false)
                 .order("start_time", { ascending: true });
 
             if (error) {

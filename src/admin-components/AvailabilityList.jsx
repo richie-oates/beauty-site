@@ -3,8 +3,20 @@ import { supabase } from "../supabaseClient";
 import { DateTime } from 'luxon';
 
 export default function AvailabilityList({ availability, onChange }) {
+    // async function deleteSlot(id) {
+    //     await supabase.from("availability").delete().eq("id", id);
+    //     onChange();
+    // }
+
     async function deleteSlot(id) {
-        await supabase.from("availability").delete().eq("id", id);
+        const confirmDelete = window.confirm("Are you sure you want to delete this slot?");
+        if (!confirmDelete) return;
+
+        const { error } = await supabase.from("availability").delete().eq("id", id);
+        if (error) {
+            console.error(error);
+            return;
+        }
         onChange();
     }
 
