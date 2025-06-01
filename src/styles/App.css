@@ -215,7 +215,7 @@ section {
 .impact-image-container {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   position: relative;
-  height: 25vh;
+  height: 15vh;
   overflow: hidden;
 }
 
@@ -302,6 +302,10 @@ section {
   .text-column,
   .media-column {
     width: 48%;
+  }
+
+  .impact-image-container {
+    height: 25vh;
   }
 }
 
