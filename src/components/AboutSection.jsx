@@ -13,12 +13,12 @@ export default function AboutSection() {
                     </div>
                     <div className='text-content'>
 
-                        <a href='#about'><h1 data-aos="fade-left" data-aos-anchor-placement="bottom-bottom" >About Me</h1></a>
-                        <p data-aos="fade-left" >My name is <b>Jess</b>, I'm the makeup artist behind <b>QB Beauty</b>, based in Sheffield.</p>
-                        <p data-aos="fade-left" >I'm passionate about all types of <b>glam</b> makeup; <b>soft glam</b>, <b>full glam</b>, <b>dewy</b> and <b>nude</b> looks.</p>
-                        <p data-aos="fade-left">I also offer classic lashes <a href='#services'>services</a>.</p>
-                        <p data-aos="fade-left" ><a href='#services'>Appointments</a> can be requested through the booking form</p>
-                        <p data-aos="fade-left" ><a href='#contact'>Contact</a> me directly for general enquiries.</p>
+                        <a href='#about'><h1 data-aos-anchor-placement="bottom-bottom" >About Me</h1></a>
+                        <p >My name is <b>Jess</b>, I'm the makeup artist behind <b>QB Beauty</b>, based in Sheffield.</p>
+                        <p >I'm passionate about all types of <b>glam</b> makeup; <b>soft glam</b>, <b>full glam</b>, <b>dewy</b> and <b>nude</b> looks.</p>
+                        <p>I also offer classic lashes <a href='#services'>services</a>.</p>
+                        <p ><a href='#services'>Appointments</a> can be requested through the booking form</p>
+                        <p ><a href='#contact'>Contact</a> me directly for general enquiries.</p>
 
                     </div>
                 </div>
