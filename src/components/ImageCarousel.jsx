@@ -35,7 +35,7 @@ export default function ImageCarousel() {
         className: "center",
         slidesToShow: 3,
         infinite: true,
-        arrows: true,
+        arrows: false,
         swipeToSlide: true,
         focusOnSelect: false,
         responsive: [
