@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { supabase } from "../supabaseClient";
 import Examples from './Examples';
+import ExampleImages from "./ExampleImages";
+import ImageCarousel from "./ImageCarousel";
 
 export default function ServicesSection() {
 
@@ -56,8 +58,10 @@ export default function ServicesSection() {
                         )
                     ))}
                 </div>
-                <Examples />
+                {/* <Examples />
+                <ExampleImages /> */}
             </div>
+            <ImageCarousel />
         </section>
     );
 }

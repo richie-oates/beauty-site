@@ -9,6 +9,9 @@ import { Public } from './Public.jsx'
 import AdminPanel from './admin-components/AdminPanel.jsx'
 import BookSlotPage from './admin-components/BookSlotPage.jsx'
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 function App() {
   useEffect(() => {
     AOS.init({
