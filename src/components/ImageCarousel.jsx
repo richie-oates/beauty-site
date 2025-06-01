@@ -33,14 +33,22 @@ export default function ImageCarousel() {
         autoplay: true,
         centerMode: true,
         className: "center",
-        slidesToShow: 4,
+        slidesToShow: 3,
         infinite: true,
         arrows: true,
         swipeToSlide: true,
         focusOnSelect: false,
         responsive: [
             {
-                breakpoint: 1920,
+                breakpoint: 2100,
+                settings: {
+                    slidesToShow: 4,
+                    initialSlide: 2,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 1930,
                 settings: {
                     slidesToShow: 3,
                     initialSlide: 2,
