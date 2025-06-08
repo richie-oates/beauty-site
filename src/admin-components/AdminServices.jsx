@@ -142,15 +142,17 @@ export default function AdminServices() {
                                 <>
                                     <span>{service.name}</span>
                                     <span>£{service.price}</span>
-                                    <button
-                                        onClick={() => {
-                                            setEditingId(service.id);
-                                            setEditedService(service);
-                                        }}
-                                    >
-                                        Edit
-                                    </button>
-                                    <button onClick={() => deleteService(service.id)} className="delete-btn">🗑️</button>
+                                    <span>
+                                        <button
+                                            onClick={() => {
+                                                setEditingId(service.id);
+                                                setEditedService(service);
+                                            }}
+                                        >
+                                            Edit
+                                        </button>
+                                        <button onClick={() => deleteService(service.id)} className="delete-btn">🗑️</button>
+                                    </span>
                                 </>
                             )}
                         </div>

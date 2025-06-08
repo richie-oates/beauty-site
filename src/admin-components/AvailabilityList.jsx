@@ -70,7 +70,7 @@ export default function AvailabilityList({ availability, onChange }) {
 
     return (
         <div className="availability-list">
-            <h2>Current Availability</h2>
+            <h2>Appointment Slots</h2>
             {filteredSlots.length === 0 && <p>No upcoming slots available.</p>}
             {filteredSlots.map(slot => (
                 <div key={slot.id} className="slot">

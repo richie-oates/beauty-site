@@ -6,6 +6,8 @@ import Login from "./Login";
 
 import '../styles/Admin.css'
 import AdminServices from "./AdminServices";
+import AdminImages from "./AdminImages";
+import SectionDivider from "../components/SectionDivider";
 
 const ADMIN_EMAILS = ["richoates2020@gmail.com", "qb.beauty.official@gmail.com"];
 
@@ -74,7 +76,10 @@ export default function AdminPanel() {
                 availability={availability}
                 onChange={fetchAvailability}
             />
+            <SectionDivider />
             <AdminServices />
+            <SectionDivider />
+            <AdminImages />
         </div>
     );
 }

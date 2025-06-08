@@ -70,19 +70,22 @@ button[disabled] {
     cursor: not-allowed;
 }
 
-.admin-services {
-    margin: 2rem 0;
-}
-
 /* .add-service-form, */
 .service-item {
+    margin: 0 auto;
     display: flex;
     gap: 0.5rem;
     margin-bottom: 0.5rem;
+    width: 80%;
+    max-width: 800px;
 }
 
 .service-item span {
     flex: 1;
+}
+
+.service-item span button {
+    margin-left: 10px;
 }
 
 .service-group {
