@@ -10,19 +10,28 @@ export default function ImageCarousel() {
 
     useEffect(() => {
         async function fetchImages() {
-            const { data, error } = await supabase.storage
-                .from("example-images")
-                .list("", { limit: 100 });
+            // Step 1: Query metadata table for visible images
+            const { data: visibleImages, error } = await supabase
+                .from('example_images_metadata')
+                .select('file_name, title')
+                .eq('isVisible', true)
+                .order('file_name', { ascending: true });
 
             if (error) {
-                console.error(error);
+                console.error('Error fetching visible images:', error.message);
                 return;
             }
+            console.log(visibleImages);
+            // Step 2: Map filenames to public URLs
+            const urls = visibleImages.map(img => {
+                const { data: { publicUrl } } = supabase
+                    .storage
+                    .from('example-images')
+                    .getPublicUrl(img.file_name);
 
-            const urls = data.map((file) =>
-                supabase.storage.from("example-images").getPublicUrl(file.name).data.publicUrl
-            );
-
+                return { file_name: img.file_name, url: publicUrl, title: img.title };
+            });
+            console.log(urls);
             setImages(urls);
         }
 
@@ -84,10 +93,10 @@ export default function ImageCarousel() {
     return (
         <div>
             <Slider {...settings}>
-                {images.map((url, index) => (
+                {images.map((image, index) => (
                     <div
                         key={index}
-                        onClick={() => handleClick(url)}
+                        onClick={() => handleClick(image.url)}
                         // style={{
                         //     height: "50vh",
                         //     width: '90vw',
@@ -98,7 +107,7 @@ export default function ImageCarousel() {
                         className="example-image-container"
                     >
                         <img
-                            src={url}
+                            src={image.url}
                             alt=""
                             // style={{
                             //     width: "100%", // adjust as needed

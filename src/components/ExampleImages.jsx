@@ -7,28 +7,27 @@ function ExampleImages() {
 
     useEffect(() => {
         async function fetchImages() {
-            const { data, error } = await supabase.storage.from('example-images').list('', {
-                limit: 10,
-                offset: 0,
-                sortBy: { column: 'name', order: 'asc' }
-            });
+            // Step 1: Query metadata table for visible images
+            const { data: visibleImages, error } = await supabase
+                .from('example_images_metadata')
+                .select('file_name, title')
+                .eq('isVisible', true)
+                .order('file_name', { ascending: true });
 
             if (error) {
-                console.error('Error fetching images:', error.message);
+                console.error('Error fetching visible images:', error.message);
                 return;
             }
-            else console.log('Files:', data);
 
-            const urls = data.map(file => {
+            // Step 2: Map filenames to public URLs
+            const urls = visibleImages.map(img => {
                 const { data: { publicUrl } } = supabase
                     .storage
                     .from('example-images')
-                    .getPublicUrl(file.name);
-                return { name: file.name, url: publicUrl };
+                    .getPublicUrl(img.file_name);
+
+                return { file_name: img.file_name, url: publicUrl, title: img.title };
             });
-
-            console.log(urls);
-
             setImages(urls);
         }
 
@@ -48,7 +47,7 @@ function ExampleImages() {
             <div className="scroll-container">
                 {images.map(img => (
                     <img
-                        key={img.name}
+                        key={img.file_name}
                         src={img.url}
                         alt=""
                         className="thumbnail"
