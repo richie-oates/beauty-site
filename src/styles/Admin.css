@@ -1,3 +1,12 @@
+.login-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
 .admin-header {
     display: flex;
     justify-content: space-between;

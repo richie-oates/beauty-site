@@ -357,6 +357,12 @@ section {
   aspect-ratio: 1;
 }
 
+@media (max-height: 720px) {
+  .example-image {
+    max-width: 70vh;
+  }
+}
+
 /* About */
 
 .profile-image-container {

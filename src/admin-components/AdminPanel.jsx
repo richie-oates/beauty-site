@@ -63,8 +63,6 @@ export default function AdminPanel() {
             <header className="admin-header">
                 <button onClick={handleLogout}>Log Out</button>
                 <button onClick={() => location.href = '/'}>Go to Main Site</button>
-
-
             </header>
 
             <h1>QBBeauty Site Admin</h1>
