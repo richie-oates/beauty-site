@@ -18,8 +18,6 @@ export function Public() {
                 <SectionDivider />
                 <ServicesSection />
                 <SectionDivider />
-                <AvailabilitySection />
-                <SectionDivider />
                 <ContactSection />
             </main>
             <Footer />
